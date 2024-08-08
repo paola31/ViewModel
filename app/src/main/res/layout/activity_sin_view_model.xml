@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img1"
+            android:alpha="0.3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/nombre"
+                android:layout_width="268dp"
+                android:layout_height="60dp"
+                android:hint="Ingresa tu nombre" />
+
+            <EditText
+                android:id="@+id/apellido"
+                android:layout_width="268dp"
+                android:layout_height="60dp"
+                android:hint="Ingresa tu apellido" />
+
+            <EditText
+                android:id="@+id/edad"
+                android:layout_width="268dp"
+                android:layout_height="60dp"
+                android:hint="Ingresa tu año de nacimiento"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/genero"
+                android:layout_width="268dp"
+                android:layout_height="60dp"
+                android:hint="Ingresa tu género" />
+
+            <Button
+                android:id="@+id/calcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#767B97"
+                android:text="Calcular tu Edad" />
+
+            <Button
+                android:id="@+id/atras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#767B97"
+                android:text="Ir atrás" />
+
+            <TextView
+                android:id="@+id/resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="35dp"
+                android:text="Resultado"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>
